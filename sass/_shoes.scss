@@ -1,0 +1,21 @@
+.shoes{
+
+
+
+    grid-column: center-start / center-end;
+    width: 94vw;
+    @media screen and (max-width: 995px){
+        width:88vw;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 4rem;
+        color: #02050f;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 3rem;
+        line-height: 38px;
+    }
+    
+}

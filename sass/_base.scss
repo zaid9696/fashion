@@ -1,0 +1,70 @@
+
+*,
+*::before,
+*::after{
+
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700&display=swap');
+
+$color-primary:#02050f;
+$color-secondary:#FFA6AA;
+
+
+html{
+
+    font-size: 62.5%; // 1 rem = 10px
+    font-family: 'News Cycle', sans-serif;
+    @media screen and (max-width: 995px){
+        font-size: 50%;
+    }
+    
+
+}
+
+
+
+body{
+
+    display:grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr)  [center-start] repeat(8, [col-start] minmax(min-content,15rem)[col-end]) [center-end]  minmax(2rem,1fr) [full-end];
+    grid-template-rows: repeat(5,min-content);
+    background-color: #F6F6F6;
+   
+}
+
+.line{
+    grid-column: full-start / full-end;
+    background-color: $color-primary;
+    height: 3px;
+    width: 100%;
+}
+
+.blur{filter: blur(1px)}
+
+
+
+::selection{
+    background-color: #02050f;
+    color: #fff;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1500;
+    display: flex;
+    place-content: center;
+    
+
+    img{
+        width: 135px;
+    }
+}

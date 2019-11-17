@@ -1,0 +1,49 @@
+.suits{
+
+    grid-column: center-start / center-end;
+    margin: 4rem 0;
+    
+
+    &__title{
+        text-align: center;
+        font-size: 4rem;
+        color: #02050f;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 4rem 0;
+        @media screen and (max-width: 650px){
+            grid-template-columns: 1fr ;
+            row-gap: 55px;
+        }
+    }
+
+    &__show{
+        img{
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+            position: relative;
+
+            z-index: 2;
+            &:hover{
+
+                transform: scale(1.1);
+                // border-left: 1px solid #02050f;
+                // border-right: 1px solid #02050f;
+                box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+                z-index: 4;
+                
+
+
+            }
+        }
+    }
+
+    
+
+}

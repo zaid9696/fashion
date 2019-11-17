@@ -1,0 +1,111 @@
+.footer{
+
+    grid-column: full-start / full-end;
+
+    text-align: center;
+    
+
+
+    &__form{
+
+        margin-bottom: 4rem;
+        @media screen and (max-width: 650px){
+            display: grid;
+            justify-items: center;
+            row-gap: 20px;
+        }
+
+        input[type=text]{
+
+            width: 360px;
+            height: 46px;
+            padding: 15px;
+            border: 3px solid;
+            font-size: 17px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            border-radius: 2px;
+            @media screen and (max-width: 650px){
+                width:300px;
+                
+            }
+
+            &:focus{
+
+                border-width: 4px;
+
+            }
+
+        }
+        input[type=submit]{
+
+            height: 46px;
+            width: 114px;
+            background: #02050f;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+             margin-left: 10px;
+             transition: all 0.3s ease-in-out;
+                @media screen and (max-width: 650px){
+
+                    width: 130px;
+                    font-size: 15px;
+
+                }
+
+            &:hover{
+
+                background: #F6F6F6;
+                color: #02050f;
+                border: 2px solid #02050f
+
+            }
+
+          
+
+        }
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 2.5rem;
+        color: #02050f;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 3rem;
+        margin-bottom: 15px;
+    }
+
+    &__social{
+
+        img{
+            width: 40px;
+            margin-left: 45px;
+            cursor: pointer;
+            @media screen and (max-width: 650px){
+
+                width: 30px;
+                margin-left: 19px;
+            }
+        }
+    }
+
+    &__copyright{
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 2rem;
+        border-bottom: 2px solid;
+        width: 79px;
+        margin-bottom: 2rem;
+    }
+    
+}
